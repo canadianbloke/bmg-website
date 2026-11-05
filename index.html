@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bare Metal Gaming | Dedicated Game Server Hosting</title>
+  <meta name="description" content="Dedicated vPC game server hosting with CubeCoders AMP, automated backups and monthly security hardening. Built for long-term gaming groups." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand">
+        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=crop/pCk0tP7OYQOupzrO/headerlogov2-DoqiEaHRD6mqj5Jz.jpg" alt="Bare Metal Gaming" />
+      </a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="links">
+        <a href="#plans">Plans</a>
+        <a href="#compare">Compare</a>
+        <a href="#managed">Managed</a>
+        <a href="#fit">Right for you?</a>
+        <a href="#faq">FAQ</a>
+        <a href="#advice">Get advice</a>
+        <a class="btn btn-primary btn-sm" href="https://my.baremetalgaming.com/">Deploy your server</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Dedicated game server hosting</p>
+        <h1>Raw power.<br /><span>Pure gaming.</span></h1>
+        <p class="lead">Your own isolated vPC with dedicated RAM, managed through a private CubeCoders AMP panel. Run several games at once and switch titles whenever your group moves on.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#plans">See plans from £30/mo</a>
+          <a class="btn btn-ghost" href="#finder">Help me choose</a>
+        </div>
+        <ul class="trust">
+          <li><strong>3–24</strong> server slots included</li>
+          <li><strong>Dedicated</strong> RAM, never shared</li>
+          <li><strong>Automatic</strong> backups</li>
+          <li><strong>Monthly</strong> security patching</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FINDER -->
+    <section class="finder" id="finder">
+      <div class="wrap finder-inner">
+        <div>
+          <p class="eyebrow">Quick match</p>
+          <h2>How many players will you host?</h2>
+        </div>
+        <div class="finder-controls">
+          <div class="seg" role="radiogroup" aria-label="Group size">
+            <button data-plan="ingot" class="active">2–4</button>
+            <button data-plan="anvil">5–10</button>
+            <button data-plan="crucible">10–25</button>
+            <button data-plan="forge">25+ / many servers</button>
+          </div>
+          <p class="finder-result" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANS -->
+    <section class="section" id="plans">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">01 / Plans</p>
+          <h2>Pick a series, then a storage tier</h2>
+          <p class="muted">Every series has the same RAM and core count across tiers. Tiers change storage speed, location options and CPU allocation.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="seg" id="tierSeg" role="radiogroup" aria-label="Storage tier">
+            <button data-tier="al">Aluminium <small>HDD</small></button>
+            <button data-tier="st" class="active">Steel <small>SSD</small></button>
+            <button data-tier="ti">Titanium <small>NVMe</small></button>
+          </div>
+          <div class="seg seg-small" id="curSeg" role="radiogroup" aria-label="Currency">
+            <button data-cur="gbp" class="active">£ GBP</button>
+            <button data-cur="eur">€ EUR</button>
+          </div>
+        </div>
+        <p class="tier-note muted" id="tierNote"></p>
+
+        <div class="cards" id="cards"></div>
+        <p class="muted small center">Need more slots? Add extra server slots anytime for £1 / €1 per month. Prices are per month.</p>
+      </div>
+    </section>
+
+    <!-- COMPARE -->
+    <section class="section alt" id="compare">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">02 / Compare</p>
+          <h2>All series side by side</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="compare">
+            <thead>
+              <tr><th></th><th>Ingot</th><th class="hl">Anvil</th><th>Crucible</th><th>Forge</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>Best for</th><td>2–4 players</td><td class="hl">8+ players</td><td>Growing communities</td><td>Large communities</td></tr>
+              <tr><th>vCPU cores</th><td>4</td><td class="hl">8</td><td>12</td><td>16</td></tr>
+              <tr><th>Dedicated RAM</th><td>8 GB</td><td class="hl">16 GB</td><td>32 GB</td><td>64 GB</td></tr>
+              <tr><th>Server slots</th><td>3</td><td class="hl">6</td><td>12</td><td>24</td></tr>
+              <tr><th>Aluminium (HDD)</th><td>160 GB</td><td class="hl">320 GB</td><td>640 GB</td><td>—</td></tr>
+              <tr><th>Steel (SSD)</th><td>128 GB</td><td class="hl">256 GB</td><td>512 GB</td><td>1 TB</td></tr>
+              <tr><th>Titanium (NVMe)</th><td>128 GB</td><td class="hl">256 GB</td><td>1 TB</td><td>1 TB</td></tr>
+              <tr><th>16 GB swap, backups, AMP, patching</th><td>✓</td><td class="hl">✓</td><td>✓</td><td>✓</td></tr>
+              <tr><th>From</th><td>£30</td><td class="hl">£45</td><td>£72</td><td>£139</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tiers">
+          <div class="tier"><h3>Aluminium</h3><p>HDD at ~100 MB/s, expandable to 4 TB. Hosted in Germany. Best for budget and storage-heavy setups.</p></div>
+          <div class="tier"><h3>Steel</h3><p>SSD at 400+ MB/s, expandable to 8 TB. Global locations available.</p></div>
+          <div class="tier"><h3>Titanium</h3><p>NVMe at 1000+ MB/s, global locations, plus <strong>dedicated vCPU cores</strong> for steady tick rates on CPU-heavy or modded games.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANAGED -->
+    <section class="section managed" id="managed">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">03 / Managed service</p>
+          <h2>Just want to play? We'll run the server for you.</h2>
+          <p class="muted">Add Managed Service to any plan and an engineer looks after your server: updates, mods, fixes and tuning. You keep full access to your AMP panel.</p>
+        </div>
+
+        <div class="managed-grid">
+          <div class="managed-list">
+            <div class="m-item"><span>⟳</span><div><h3>Game &amp; mod updates</h3><p>We apply game patches and keep mods in sync after updates, so your group can log in and play.</p></div></div>
+            <div class="m-item"><span>⚙</span><div><h3>Setup &amp; configuration</h3><p>New game installs, modpacks, server settings, whitelists and admin permissions done for you.</p></div></div>
+            <div class="m-item"><span>⚡</span><div><h3>Performance tuning</h3><p>We monitor CPU and RAM use and adjust settings to keep tick rates steady as your world grows.</p></div></div>
+            <div class="m-item"><span>⛑</span><div><h3>Troubleshooting &amp; restores</h3><p>Crashes, broken mods or a corrupted save? We fix it or roll back to a backup.</p></div></div>
+            <div class="m-item"><span>✉</span><div><h3>Priority support</h3><p>Your requests go to the front of the queue, via Discord or email.</p></div></div>
+          </div>
+
+          <aside class="managed-card">
+            <span class="badge">Add-on</span>
+            <h3>Managed Service</h3>
+            <p class="for">Works with every series and tier</p>
+            <div class="price" id="managedPrice"></div>
+            <ul class="specs">
+              <li><span>Game &amp; mod updates</span><span>✓</span></li>
+              <li><span>New game &amp; modpack setup</span><span>✓</span></li>
+              <li><span>Performance monitoring</span><span>✓</span></li>
+              <li><span>Fixes &amp; backup restores</span><span>✓</span></li>
+              <li><span>Priority support</span><span>✓</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#advice" data-managed>Ask about Managed Service</a>
+            <p class="muted small center">Cancel the add-on anytime. Your server stays.</p>
+          </aside>
+        </div>
+
+        <div class="table-wrap self-vs">
+          <table class="compare">
+            <thead><tr><th></th><th>Self-managed</th><th class="hl">Managed</th></tr></thead>
+            <tbody>
+              <tr><th>Your own AMP panel</th><td>✓</td><td class="hl">✓</td></tr>
+              <tr><th>Automatic backups &amp; security patching</th><td>✓</td><td class="hl">✓</td></tr>
+              <tr><th>Game &amp; mod updates</th><td>You</td><td class="hl">Us</td></tr>
+              <tr><th>Installing new games &amp; modpacks</th><td>You</td><td class="hl">Us</td></tr>
+              <tr><th>Fixing crashes &amp; restoring saves</th><td>You</td><td class="hl">Us</td></tr>
+              <tr><th>Support</th><td>Standard</td><td class="hl">Priority</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIT -->
+    <section class="section alt" id="fit">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">04 / Is this for you?</p>
+          <h2>Built for groups that stick together</h2>
+        </div>
+        <div class="fit-grid">
+          <div class="fit yes">
+            <h3>Great fit</h3>
+            <ul>
+              <li><strong>Long-term groups and clans</strong> who want a permanent home and spin up new games on demand.</li>
+              <li><strong>Multi-game hosts</strong> keeping a persistent world running while rotating seasonal co-op titles.</li>
+              <li><strong>Performance and privacy seekers</strong> who want dedicated resources and their own AMP portal.</li>
+            </ul>
+          </div>
+          <div class="fit no">
+            <h3>Not a fit</h3>
+            <ul>
+              <li><strong>Weekend rentals.</strong> Every server is hand-provisioned and hardened, so we don't do 48-hour throwaways.</li>
+              <li><strong>One-game, one-week hoppers.</strong> A standard slot host will suit you better.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap narrow">
+        <div class="section-head">
+          <p class="eyebrow">05 / FAQ</p>
+          <h2>How the platform works</h2>
+        </div>
+        <details>
+          <summary>How do the included server slots work?</summary>
+          <p>Each plan includes a number of server slots: 3 on Ingot, 6 on Anvil, 12 on Crucible and 24 on Forge. That's how many game servers you can have installed in AMP at once. Run one heavy server or several light ones at the same time; the only limit is your CPU and RAM. Extra slots are £1 / €1 per month.</p>
+        </details>
+        <details>
+          <summary>Can we switch games when the group moves on?</summary>
+          <p>Yes. In your AMP portal you can stop a server, back it up or delete it, and deploy a different supported game in minutes at no extra cost.</p>
+        </details>
+        <details>
+          <summary>What's the difference between Aluminium, Steel and Titanium?</summary>
+          <p>Same RAM and cores within a series. Aluminium uses HDD storage in Germany. Steel uses SSD and unlocks global locations. Titanium uses NVMe, global locations and dedicated vCPU cores for guaranteed tick rates.</p>
+        </details>
+        <details>
+          <summary>How is this different from slot-based game hosts?</summary>
+          <p>Slot hosts put your game on a crowded machine shared with strangers. With Bare Metal Gaming you get an isolated vPC with dedicated RAM, 16 GB of pre-configured swap for memory spikes, automated backups and a monthly security patch cycle.</p>
+        </details>
+        <details>
+          <summary>Why no weekend rentals?</summary>
+          <p>Every environment is provisioned by hand, security-hardened and given its own AMP instance. That engineering time goes into a stable long-term hub, so the platform is designed for ongoing groups.</p>
+        </details>
+        <details>
+          <summary>What is AMP, and which games can I host?</summary>
+          <p>CubeCoders AMP is the control panel you use to deploy and manage servers. It supports a large library of survival, RPG, FPS and other multiplayer titles. See the full live list on the <a href="https://cubecoders.com/AMP" target="_blank" rel="noopener">CubeCoders AMP compatibility page</a>.</p>
+        </details>
+        <details>
+          <summary>What does the Managed Service add-on cover?</summary>
+          <p>We handle the day-to-day running of your server: game and mod updates, installing new games and modpacks, performance tuning, fixing crashes and restoring backups, with priority support. You still have full access to your AMP panel, and you can drop the add-on at any time without losing your server.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ADVICE -->
+    <section class="section alt" id="advice">
+      <div class="wrap advice">
+        <div>
+          <p class="eyebrow">06 / Pre-sales advice</p>
+          <h2>Not sure which tier fits your mod list?</h2>
+          <p class="muted">Tell us your games, modpacks and player count. An engineer will reply with the exact series and storage tier you need.</p>
+        </div>
+        <form class="form" id="adviceForm">
+          <label>Name or Discord handle<input name="name" required /></label>
+          <label>Email address<input name="email" type="email" required /></label>
+          <label>Games, modpacks and player count<textarea name="details" rows="4" required placeholder="e.g. Modded Valheim for 10 players + Enshrouded for 4"></textarea></label>
+          <button class="btn btn-primary" type="submit">Get hardware advice</button>
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=crop/pCk0tP7OYQOupzrO/headerlogov2-DoqiEaHRD6mqj5Jz.jpg" alt="Bare Metal Gaming" />
+      <nav>
+        <a href="https://www.baremetalgaming.com/terms-and-conditions">Terms of Service</a>
+        <a href="https://www.baremetalgaming.com/privacy-policy">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Imprint</a>
+      </nav>
+      <p class="muted small">© 2026 Bare Metal Gaming</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
